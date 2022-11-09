@@ -20,51 +20,24 @@ $desktop:   1200px;
     }
 }
 
-.container {
-    border: 1px solid red;
-    height: 100vh;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-
-    display: grid;
-    place-content: center;
-    background-color: $color-1;
-}
-
-.text {
-    
-}
-
 #size {
     position: absolute;
     left: 50%;
     top: 60%;
     transform: translate(-50%);
     font-size: 35px;
+    color: red;
 }
 
-@media (max-width: $desktop) {
-    .container {
-        background-color: $color-4;
-    }
+.container {
+    height: 100vh;
 }
 
-@media (max-width: $laptop) {
-    .container {
-        background-color: $color-3;
-    }
+header {
+    display: flex;
+    flex-direction: row;
 }
 
-@media (max-width: $tablet) {
-    .container {
-        background-color: $color-2;
-    }
-}
+main {}
 
-@media (max-width: $mobile) {
-    .container {
-        background-color: $color-1;
-    }
-}
-
+footer {}
