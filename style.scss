@@ -67,12 +67,10 @@ $desktop:   1200px;
         background-size: contain;
         background-repeat: no-repeat;
 
-        border: 2px solid red;
     }
 
     &__text{
         width: 50%;
-        border: 2px solid red;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -89,6 +87,14 @@ $desktop:   1200px;
 }
 
 .footer {
+    border: 2px solid green;
     height: 10%;
+    display: flex;
+    flex-direction: row;
 
+    [class ^="footer__"]{
+        img {
+            width: 5.3vw;
+        }
+    }
 }

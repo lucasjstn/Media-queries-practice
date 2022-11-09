@@ -50,11 +50,9 @@
   background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
-  border: 2px solid red;
 }
 .main__text {
   width: 50%;
-  border: 2px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,5 +66,11 @@
 }
 
 .footer {
+  border: 2px solid green;
   height: 10%;
+  display: flex;
+  flex-direction: row;
+}
+.footer [class^=footer__] img {
+  width: 5.3vw;
 }/*# sourceMappingURL=style.css.map */
