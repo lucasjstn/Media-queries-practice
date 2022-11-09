@@ -10,7 +10,7 @@ $laptop:    992px;
 $desktop:   1200px;
 
 * {
-    margin: 0;
+    margin: 0px 5px;
     padding: 0;
     box-sizing: border-box;
 
@@ -33,24 +33,51 @@ $desktop:   1200px;
     height: 100vh;
 }
 
-header {
+.header {
+    height: 10%;
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
 
-    // not working 
-    // &__logo {
-    //     font-size: 4vw;
-    // }
+    // it doesnt work with semantic tags, only div
+    &__logo {
+        font-size: 4vw;
+    }
 
-    // &__menu {
-    //     display: flex;
-    //     flex-direction: row;
-    //     font-size: 2.5vw;
-    // }
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        font-size: 2.5vw;
+        gap: 15px;
+    }
 }
 
 
-main {}
+.main {
+    height: 80%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
 
-footer {}
+    &__image{
+        background-image: url('./images/Portrait.png');
+        width: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &__text{
+        width: 50%;
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.footer {
+    height: 10%;
+
+}
