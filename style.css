@@ -13,4 +13,12 @@
   height: 100vh;
   display: grid;
   place-content: center;
+}
+
+#size {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%);
+  font-size: 35px;
 }/*# sourceMappingURL=style.css.map */
