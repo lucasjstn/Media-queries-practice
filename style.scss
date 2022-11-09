@@ -56,7 +56,6 @@ $desktop:   1200px;
 
 .main {
     height: 80%;
-    border: 2px solid black;
     display: flex;
     flex-direction: row;
 
@@ -87,14 +86,67 @@ $desktop:   1200px;
 }
 
 .footer {
-    border: 2px solid green;
     height: 10%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: 10%;
 
     [class ^="footer__"]{
         img {
             width: 5.3vw;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+
+        justify-content: center;
+        &__logo {
+            font-size: 40px;
+        }
+
+        &__menu {
+            display: none;
+        }
+    }
+    
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__image {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-size: 100%;
+            background-position: center;
+        }   
+
+        &__text {
+            width: 100%;
+            &-1 {
+                display: none;
+            }
+
+            &-2, &-3, &-4 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .footer {
+
+        justify-content: center;
+        margin: 0;
+        [class ^="footer__"]{
+            img {
+                width: 45px;
+                height: 45px;
+            }
         }
     }
 }
