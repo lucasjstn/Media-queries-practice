@@ -44,8 +44,27 @@ $desktop:   1200px;
     font-size: 35px;
 }
 
-@media (min-width: $mobile) {
+@media (max-width: $desktop) {
+    .container {
+        background-color: $color-4;
+    }
+}
+
+@media (max-width: $laptop) {
+    .container {
+        background-color: $color-3;
+    }
+}
+
+@media (max-width: $tablet) {
     .container {
         background-color: $color-2;
     }
 }
+
+@media (max-width: $mobile) {
+    .container {
+        background-color: $color-1;
+    }
+}
+
