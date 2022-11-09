@@ -22,4 +22,10 @@
   top: 60%;
   transform: translate(-50%);
   font-size: 35px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    background-color: #fff1e6;
+  }
 }/*# sourceMappingURL=style.css.map */

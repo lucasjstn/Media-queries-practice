@@ -37,3 +37,9 @@ $color-4: #bee1e6; //Mobile
     transform: translate(-50%);
     font-size: 35px;
 }
+
+@media (max-width: 600px) {
+    .container {
+        background-color: $color-2;
+    }
+}
