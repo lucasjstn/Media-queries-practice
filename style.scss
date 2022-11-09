@@ -8,3 +8,20 @@
         font-size: 35px;
     }
 }
+
+.container {
+    border: 1px solid red;
+    height: 100vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    display: grid;
+    place-content: center;
+}
+
+.text {
+    
+}
+
+#size {}

@@ -6,4 +6,11 @@
 * body {
   font-family: sans-serif;
   font-size: 35px;
+}
+
+.container {
+  border: 1px solid red;
+  height: 100vh;
+  display: grid;
+  place-content: center;
 }/*# sourceMappingURL=style.css.map */
