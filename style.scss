@@ -3,6 +3,12 @@ $color-2: #fff1e6; //Mobile
 $color-3: #52b788; //Mobile
 $color-4: #bee1e6; //Mobile
 
+// breakpoints
+$mobile:    576px;
+$tablet:    768px;
+$laptop:    992px;
+$desktop:   1200px;
+
 * {
     margin: 0;
     padding: 0;
@@ -38,7 +44,7 @@ $color-4: #bee1e6; //Mobile
     font-size: 35px;
 }
 
-@media (max-width: 600px) {
+@media (min-width: $mobile) {
     .container {
         background-color: $color-2;
     }
